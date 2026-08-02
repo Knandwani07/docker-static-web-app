@@ -1,26 +1,40 @@
-# Docker Static Web App
+# Containerizing a Static Web Application with Docker 🐳
 
-A beginner-friendly Docker project that demonstrates the complete containerization workflow by packaging a simple HTML web application with Docker and Nginx. This project covers the fundamentals of building Docker images, running containers, exposing applications through port mapping, and managing the container lifecycle.
+## 📖 About this Project
+
+This project demonstrates the complete Docker containerization workflow by packaging a simple HTML web application with Docker and Nginx. It covers the essential Docker concepts required to build, deploy, and manage containerized applications in a consistent and portable environment.
+
+The application is packaged into a custom Docker image using a Dockerfile and deployed as a Docker container running the Nginx web server. Docker's port mapping feature exposes the application to the host machine, allowing users to access it through a web browser. Throughout the project, you'll learn how to build Docker images, run containers, inspect logs, access the container shell, and manage the complete container lifecycle.
+
+This project serves as a practical introduction to containerization and provides a strong foundation for learning advanced technologies such as Docker Compose, Kubernetes, Amazon ECS, and cloud-native application deployment.
 
 ---
 
-## 🚀 Features
+## 🎯 Project Objectives
 
-* Containerize a static HTML website using Docker
-* Build a custom Docker image with a Dockerfile
-* Serve the application using Nginx
-* Access the application through port mapping
-* Inspect logs and interact with the running container
-* Practice the complete Docker container lifecycle
+- Build a custom Docker image using a Dockerfile.
+- Containerize a static HTML web application.
+- Deploy the application using an Nginx container.
+- Configure Docker port mapping for browser access.
+- Verify container status and inspect application logs.
+- Access the running container using the Docker CLI.
+- Manage the complete Docker container lifecycle.
+- Understand the differences between Docker images and containers.
+- Demonstrate Docker containerization best practices.
 
 ---
 
 ## 🛠️ Technologies Used
 
-* Docker
-* Dockerfile
-* Nginx
-* HTML
+| Technology | Purpose |
+|------------|---------|
+| Docker | Containerization platform |
+| Dockerfile | Defines image build instructions |
+| Docker Image | Packages the application and dependencies |
+| Docker Container | Runs the containerized application |
+| Nginx | Serves the static web application |
+| HTML | Creates the web page |
+| Docker CLI | Builds images and manages containers |
 
 ---
 
@@ -28,102 +42,57 @@ A beginner-friendly Docker project that demonstrates the complete containerizati
 
 ```text
 docker-static-web-app/
+│
+├── architecture-overview.md
+├── cleanup-guide.md
+├── command-reference.md
+├── deployment-guide.md
+├── execution-workflow.md
+├── Project_Documentation.pdf
 ├── Dockerfile
 ├── index.html
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-## ⚡ Getting Started
+## 📋 Prerequisites
 
-### Clone the repository
+Before running this project, ensure you have:
 
-```bash
-git clone https://github.com/Knandwani07/docker-static-web-app.git
-cd docker-static-web-app
-```
-
-### Build the Docker image
-
-```bash
-docker build -t my-web-app .
-```
-
-### Run the container
-
-```bash
-docker run -d -p 8080:80 --name web-container my-web-app
-```
-
-### Access the application
-
-Open your browser and visit:
-
-```text
-http://localhost:8080
-```
+- Docker Desktop (Windows/macOS) or Docker Engine (Linux) installed.
+- Docker Engine running successfully.
+- Basic familiarity with the command line.
+- A modern web browser.
 
 ---
 
-## 📋 Useful Docker Commands
+## 📚 Concepts Covered
 
-### View running containers
+This project demonstrates practical implementation of the following Docker concepts:
 
-```bash
-docker ps
-```
-
-### View container logs
-
-```bash
-docker logs web-container
-```
-
-### Open a shell inside the container
-
-```bash
-docker exec -it web-container bash
-```
-
-### Stop the container
-
-```bash
-docker stop web-container
-```
-
-### Start the container
-
-```bash
-docker start web-container
-```
-
-### Remove the container
-
-```bash
-docker rm web-container
-```
-
-### Remove the image
-
-```bash
-docker rmi my-web-app
-```
+- Docker Containerization
+- Docker Images and Containers
+- Dockerfile Fundamentals
+- Container Lifecycle Management
+- Port Mapping
+- Nginx Web Server
+- Docker CLI Commands
+- Application Isolation
+- Container Deployment Best Practices
 
 ---
 
-## 🎯 Learning Outcomes
+## 🤝 Let's Connect
 
-* Understand the difference between Docker images and containers
-* Build Docker images using a Dockerfile
-* Run and manage Docker containers
-* Expose applications using port mapping
-* Inspect logs and troubleshoot running containers
-* Practice the Docker container lifecycle
+- 💼 **LinkedIn:** https://www.linkedin.com/in/khushi-nandwani/
+- 💻 **GitHub:** https://github.com/Knandwani07
+- 📬 **Substack:** https://substack.com/@khushinandwani07
+- ✍️ **Dev Community:** https://dev.to/khushi_nandwani07
+- 📝 **Medium:** https://medium.com/@khushinandwanii
+- 🌐 **Portfolio:** https://main.d1n4wt6uo5bfx6.amplifyapp.com/
 
 ---
 
-## 🤝 Connect with Me
-
-* **LinkedIn:** https://www.linkedin.com/in/khushi-nandwani/
-* **GitHub:** https://github.com/Knandwani07
+⭐ **If you found this project helpful, consider giving it a star!**
